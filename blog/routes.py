@@ -30,7 +30,7 @@ def entryy(form, entry_id=None, entry=None):
          db.session.add(entry)
       else:
          form.populate_obj(entry)
-         db.session.commit()
+      db.session.commit()
    else:
       errors = form.errors
 
